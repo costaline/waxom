@@ -5,3 +5,8 @@
 @import "global/mixins.scss";
 @import "global/keyframes.scss";
 //blocks
+@import "../blocks/page-header/style/page-header.scss";
+@import "../blocks/main-nav/style/main-nav.scss";
+@import "../blocks/logo/style/logo.scss";
+@import "../blocks/site-list/style/site-list.scss";
+@import "../blocks/search-list/style/search-list.scss";
