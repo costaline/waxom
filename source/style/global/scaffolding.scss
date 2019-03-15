@@ -1,4 +1,68 @@
 @font-face {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-style: normal;
+  src: url(../fonts/montserrat-thin-webfont.woff) format('woff');
+  src: url(../fonts/montserrat-thin-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/montserrat-light-webfont.woff) format('woff');
+  src: url(../fonts/montserrat-light-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/montserrat-regular-webfont.woff) format('woff');
+  src: url(../fonts/montserrat-regular-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/raleway-regular-webfont.woff) format('woff');
+  src: url(../fonts/raleway-regular-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/raleway-medium-webfont.woff) format('woff');
+  src: url(../fonts/raleway-medium-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/raleway-semibold-webfont.woff) format('woff');
+  src: url(../fonts/raleway-semibold-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/raleway-bold-webfont.woff) format('woff');
+  src: url(../fonts/raleway-bold-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-style: normal;
+  src: url(../fonts/raleway-extrabold-webfont.woff) format('woff');
+  src: url(../fonts/raleway-extrabold-webfont.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'Roboto';
   font-weight: 400;
   font-style: normal;
@@ -6,20 +70,10 @@
   src: url(../fonts/roboto-regular-webfont.woff2) format('woff2');
 }
 
-@font-face {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-style: normal;
-  src: url(../fonts/roboto-medium-webfont.woff) format('woff');
-  src: url(../fonts/roboto-medium-webfont.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-style: normal;
-  src: url(../fonts/roboto-bold-webfont.woff) format('woff');
-  src: url(../fonts/roboto-bold-webfont.woff2) format('woff2');
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #8c8c8c;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -47,10 +101,6 @@ ul, li, p {
 
 ul {
   list-style: none;
-}
-
-body {
-  font-family: '', Arial sans-serif;
 }
 
 img {
