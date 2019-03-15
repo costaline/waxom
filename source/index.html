@@ -10,9 +10,14 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__link" href="#"><img class="page-header__logo" src="" width="" height="" alt="Waxom">Waxom</a>
+    <div class="logo page-header__logo">
+      <a class="logo__link" href="#">
+        <img class="logo__img" src="" width="" height="" alt="Waxom">
+        Waxom
+      </a>
+    </div>
     <nav class="main-nav">
-      <ul class="site-list main-nav__list">
+      <ul class="site-list main-nav__site">
         <li class="site-list__item"><a href="#" class="site-list__link site-list__link--active">Home</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">About us</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">Portfolio</a></li>
@@ -22,11 +27,11 @@
         <li class="site-list__item"><a href="#" class="site-list__link">Shortcodes</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">Contact</a></li>
       </ul>
+      <ul class="user-list main-nav__user">
+        <li class="user-list__item user-list__item--map"><span class="visually-hidden">Map</span></li>
+        <li class="user-list__item user-list__item--search"><span class="visually-hidden">Search</span></li>
+      </ul>
     </nav>
-    <ul class="user-list">
-      <li class="user-list__item user-list__item--map"><span class="visually-hidden">Map</span></li>
-      <li class="user-list__item user-list__item--search"><span class="visually-hidden">Search</span></li>
-    </ul>
   </header>
 
   <main class="page-main">
@@ -104,12 +109,14 @@
     </section>
 
     <section class="realizations">
-      <h2 class="realizations__headline">Waxom is Realization of your Ideas.</h2>
-      <p class="realizations__descriptions">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+      <h2 class="headline realizations__headline">Waxom is Realization of your Ideas.</h2>
+      <p class="description realizations__description">Investigationes demonstraverunt lectores legere me lius quod ii
+        legunt
         saepius. Claritas est etiam processus dynamicus,
         qui sequitur mutationem consuetudium.</p>
       <img class="realizations__picture" src="" alt="Realizations preview">
     </section>
+
     <section class="theme">
       <h2 class="theme__headline">Waxom Multipurpose WordPress Theme</h2>
       <p class="theme__description">Don't Forget to Rate the Template. Thanks so much!</p>
@@ -117,8 +124,9 @@
     </section>
 
     <section class="latest-projects">
-      <h2 class="lates-projects__headline">Our Latest Projects.</h2>
-      <p class="latest-projects__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+      <h2 class="headline lates-projects__headline">Our Latest Projects.</h2>
+      <p class="description latest-projects__description">Investigationes demonstraverunt lectores legere me lius quod
+        ii legunt
         saepius. Claritas est etiam processus dynamicus,
         qui sequitur mutationem consuetudium.</p>
       <ul class="button-list">
@@ -164,8 +172,9 @@
     </section>
 
     <section class="presentation">
-      <h2 class="presentation__headline">Waxom Video Presentation</h2>
-      <p class="presentation__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+      <h2 class="headline headline--light presentation__headline">Waxom Video Presentation</h2>
+      <p class="description description--light presentation__description">Investigationes demonstraverunt lectores
+        legere me lius quod ii legunt
         saepius, qui sequitur mutationem consuetudium.</p>
       <p class="presentation__time">03:26</p>
       <video class="presentation__video" src=""></video>
@@ -173,8 +182,9 @@
     </section>
 
     <section class="excellent">
-      <h2 class="excellent__headline">Excellent for Mobile Devices.</h2>
-      <p class="excellent__description">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      <h2 class="headline excellent__headline">Excellent for Mobile Devices.</h2>
+      <p class="description excellent__description">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit
         lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod
         ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
       </p>
@@ -218,12 +228,13 @@
     </section>
 
     <section class="recent-posts">
-      <h2 class="recent-posts__headline">Recent Posts.</h2>
-      <p class="recent-posts__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+      <h2 class="headline recent-posts__headline">Recent Posts.</h2>
+      <p class="description recent-posts__description">Investigationes demonstraverunt lectores legere me lius quod ii
+        legunt
         saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
       <ul class="recent-posts__list">
         <li class="post recent-posts__item">
-          <time class="post__date" datetime="2019-09-30">
+          <time class="post__date" datetime="2015-09-30">
             <span class="post__day">30</span><span class="post__month">sep</span>
           </time>
           <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
@@ -232,7 +243,7 @@
           <a href="" class="post__link">Read More</a>
         </li>
         <li class="post recent-posts__item">
-          <time class="post__date" datetime="2019-09-30">
+          <time class="post__date" datetime="2015-09-30">
             <span class="post__day">30</span><span class="post__month">sep</span>
           </time>
           <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
@@ -241,7 +252,7 @@
           <a href="" class="post__link">Read More</a>
         </li>
         <li class="post recent-posts__item">
-          <time class="post__date" datetime="2019-09-30">
+          <time class="post__date" datetime="2015-09-30">
             <span class="post__day">30</span><span class="post__month">sep</span>
           </time>
           <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
@@ -250,7 +261,7 @@
           <a href="" class="post__link">Read More</a>
         </li>
         <li class="post recent-posts__item">
-          <time class="post__date" datetime="2019-09-30">
+          <time class="post__date" datetime="2015-09-30">
             <span class="post__day">30</span><span class="post__month">sep</span>
           </time>
           <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
@@ -259,7 +270,7 @@
           <a href="" class="post__link">Read More</a>
         </li>
         <li class="post recent-posts__item">
-          <time class="post__date" datetime="2019-09-30">
+          <time class="post__date" datetime="2015-09-30">
             <span class="post__day">30</span><span class="post__month">sep</span>
           </time>
           <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
@@ -268,7 +279,7 @@
           <a href="" class="post__link">Read More</a>
         </li>
         <li class="post recent-posts__item">
-          <time class="post__date" datetime="2019-09-30">
+          <time class="post__date" datetime="2015-09-30">
             <span class="post__day">30</span><span class="post__month">sep</span>
           </time>
           <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
@@ -294,75 +305,84 @@
     <h2 class="visually-hidden"></h2>
     <div class="page-footer__wrapper">
 
-      <section class="about page-footer__about">
-        <h3 class="about__headline">Waxon</h3>
-        <img src="" alt="" class="about__logo">
-        <p class="about__text">
+      <section class="footer-about page-footer__footer-about">
+        <h3 class="visually-hidden">Waxon</h3>
+        <div class="logo page-footer__logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="" width="" height="" alt="Waxom">
+            Waxom
+          </a>
+        </div>
+        <img src="" alt="" class="footer-about__logo">
+        <p class="footer__text">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
           dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis
           claritatem.
         </p>
-        <a class="about__link" href="#"></a>
+        <a class="footer-about__link" href="#"></a>
       </section>
 
-      <section class="page-footer__recent-posts">
-        <h3 class="">Recent Posts</h3>
-        <ul>
-          <li>
-            <time datetime="2015-09-08">September 08, 2015</time>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+      <section class="footer-posts page-footer__footer-posts">
+        <h3 class="footer-headline footer-posts__headline">Recent Posts</h3>
+        <ul class="footer-posts__list">
+          <li class="footer-posts__item">
+            <time class="footer-posts__date" datetime="2015-09-08">September 08, 2015</time>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
           </li>
-          <li>
-            <time datetime="2015-09-08">September 08, 2015</time>
-            <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+          <li class="footer-posts__item">
+            <time class="footer-posts__date footer-posts__date--hover" datetime="2015-09-08">September 08, 2015</time>
+            <p class="footer__text footer__text--hover">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
           </li>
-          <li>
-            <time datetime="2015-09-08">September 08, 2015</time>
-            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+          <li class="footer-posts__item">
+            <time class="footer-posts__date" datetime="2015-09-08">September 08, 2015</time>
+            <p class="footer__text">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta
+              decima</p>
           </li>
         </ul>
       </section>
 
-      <section class="page-footer__twitter">
-        <h3 class="">Our Twitter</h3>
-        <ul>
-          <li>
-            <p><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+      <section class="footer-twitter page-footer__footer-twitter">
+        <h3 class="footer-headline footer-twitter__headline">Our Twitter</h3>
+        <ul class="footer-twitter__list">
+          <li class="footer-twitter__item">
+            <p class="footer-twitter__text"><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil
+              imperdiet doming</p>
             <time datetime="2015-09-08">3 mins ago</time>
           </li>
-          <li>
-            <p>Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit
+          <li class="footer-twitter__item">
+            <p class="footer__text">Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus
+              parum anteposuerit
               litterarum</p>
             <time datetime="2015-09-08">5 hours ago</time>
           </li>
-          <li>
-            <p>Soluta nobis option <a href="#">bit.ly/1Hniso7</a></p>
+          <li class="footer-twitter__item">
+            <p class="footer__text">Soluta nobis option <a href="#">bit.ly/1Hniso7</a></p>
             <time datetime="2015-09-08">20 days ago</time>
           </li>
         </ul>
       </section>
 
       <section>
-        <h3 class="">Dribbble Widget</h3>
-        <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+        <h3 class="footer-dribbble page-footer__dribbble">Dribbble Widget</h3>
+        <ul class="footer-dribbble__list">
+          <li class="footer-dribbble__item"><img src="" alt=""></li>
+          <li class="footer-dribbble__item"><img src="" alt=""></li>
+          <li class="footer-dribbble__item"><img src="" alt=""></li>
+          <li class="footer-dribbble__item"><img src="" alt=""></li>
         </ul>
       </section>
     </div>
 
-    <section class="">
-      <ul>
-        <li>Copyright &copy; 2015 Waxom</li>
-        <li>Privacy Policy</li>
-        <li>FAQ</li>
-        <li>Support</li>
+    <section class="footer-copyright page-footer__copyright">
+      <ul class="footer-copyright__list">
+        <li class="footer-copyright__item">Copyright &copy; 2015 <span class="footer-copyright__name">Waxom</span></li>
+        <li class="footer-copyright__item">Privacy Policy</li>
+        <li class="footer-copyright__item footer-copyright__item--hover">FAQ</li>
+        <li class="footer-copyright__item">Support</li>
       </ul>
-      <ul>
-        <li>Designed by ThemeFire</li>
-        <li>Only on Envato Market</li>
+      <ul class="footer-copyright__list">
+        <li class="footer-copyright__item">Designed by <span class="footer-copyright__name">ThemeFire</span></li>
+        <li class="footer-copyright__item">Only on <span class="footer-copyright__name">Envato Market</span></li>
       </ul>
     </section>
   </footer>
