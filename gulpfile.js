@@ -9,7 +9,7 @@ var include = require("posthtml-include");
 var autoprefixer = require("gulp-autoprefixer");
 var cleanCSS = require("gulp-clean-css");
 var imagemin = require("gulp-imagemin");
-// var svgstore = require("gulp-svgstore");
+var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var browserSync = require("browser-sync").create();
 var del = require("del");
@@ -65,7 +65,10 @@ function script() {
 }
 
 function images() {
-  return gulp.src("source/blocks/**/img/*.{png,jpg,jpeg,svg}")
+  return gulp.src([
+      "source/blocks/**/img/*.{png,jpg,jpeg,svg}",
+      "!source/blocks/**/img/*-icon.svg"
+    ])
     .pipe(flatten())
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
@@ -76,12 +79,12 @@ function images() {
     .pipe(gulp.dest("build/img"));
 }
 
-// function sprite() {
-//     return gulp.src("source/img/icon-*.svg")
-//         .pipe(svgstore({ inlineSvg: true }))
-//         .pipe(rename("sprite.svg"))
-//         .pipe(gulp.dest("build/img"));
-// }
+function sprite() {
+  return gulp.src("source/blocks/**/img/*-icon.svg")
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
 
 function browserSyncReload(done) {
     browserSync.reload();
@@ -115,8 +118,8 @@ function copyghub() {
 
 // complex tasks
 
-var build = gulp.series(clean, copy, gulp.parallel(style, html, script, images));
-// var build = gulp.series(clean, copy, gulp.parallel(style, html, script, images, sprite));
+// var build = gulp.series(clean, copy, gulp.parallel(style, html, script, images));
+var build = gulp.series(clean, copy, sprite, gulp.parallel(style, html, script, images));
 var dev = gulp.series(build, watch);
 var publish = gulp.series(build, cleanghub, copyghub);
 
@@ -124,7 +127,7 @@ var publish = gulp.series(build, cleanghub, copyghub);
 
 exports.clean = clean;
 exports.style = style;
-// exports.sprite = sprite;
+exports.sprite = sprite;
 exports.html = html;
 exports.script = script;
 exports.images = images;
