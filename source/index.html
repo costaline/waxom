@@ -18,28 +18,30 @@
 
 <body>
   <header class="page-header">
-    <div class="logo page-header__logo">
-      <a class="logo__link" href="#">
-        <img class="logo__img" src="" width="" height="" alt="Waxom">
-        Waxom
-      </a>
+    <div class="container">
+      <div class="logo page-header__logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="" width="" height="" alt="Waxom">
+          Waxom
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="site-list main-nav__site">
+          <li class="site-list__item"><a href="#" class="site-list__link site-list__link--active">Home</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">About us</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Portfolio</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Features</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Blog</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Pricing</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Shortcodes</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Contact</a></li>
+        </ul>
+        <ul class="user-list main-nav__user">
+          <li class="user-list__item user-list__item--map"><span class="visually-hidden">Map</span></li>
+          <li class="user-list__item user-list__item--search"><span class="visually-hidden">Search</span></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <ul class="site-list main-nav__site">
-        <li class="site-list__item"><a href="#" class="site-list__link site-list__link--active">Home</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">About us</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Portfolio</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Features</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Blog</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Pricing</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Shortcodes</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Contact</a></li>
-      </ul>
-      <ul class="user-list main-nav__user">
-        <li class="user-list__item user-list__item--map"><span class="visually-hidden">Map</span></li>
-        <li class="user-list__item user-list__item--search"><span class="visually-hidden">Search</span></li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">
@@ -87,311 +89,367 @@
     </section>
 
     <section class="services">
-      <h2 class="visually-hidden">Services</h2>
-      <ul class="services__list">
-        <li class="services__item">
-          <img class="services__picture" src="" alt="Web & App Design">
-          <p class="services__title">Web & App Design</p>
-          <p class="services__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
-            doming id quod mazim.</p>
-        </li>
-        <li class="services__item">
-          <img class="services__picture" src="" alt="Development">
-          <p class="services__title">Development</p>
-          <p class="services__description">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod
-            tincidunt ut laoreet.</p>
-        </li>
-        <li class="services__item">
-          <img class="services__picture" src="" alt="Customization">
-          <p class="services__title">Customization</p>
-          <p class="services__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
-            doming id quod mazim.</p>
-        </li>
-        <li class="services__item">
-          <img class="services__picture" src="" alt="Marketing">
-          <p class="services__title">Marketing</p>
-          <p class="services__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
-            doming id quod mazim.</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Services</h2>
+        <ul class="services__list row">
+          <li class="services__item col-lg-3">
+            <img class="services__picture" src="" alt="Web & App Design">
+            <p class="services__title">Web & App Design</p>
+            <p class="services__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+              doming id quod mazim.</p>
+          </li>
+          <li class="services__item col-lg-3">
+            <img class="services__picture" src="" alt="Development">
+            <p class="services__title">Development</p>
+            <p class="services__description">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod
+              tincidunt ut laoreet.</p>
+          </li>
+          <li class="services__item col-lg-3">
+            <img class="services__picture" src="" alt="Customization">
+            <p class="services__title">Customization</p>
+            <p class="services__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+              doming id quod mazim.</p>
+          </li>
+          <li class="services__item col-lg-3">
+            <img class="services__picture" src="" alt="Marketing">
+            <p class="services__title">Marketing</p>
+            <p class="services__description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+              doming id quod mazim.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="realizations">
-      <h2 class="headline realizations__headline">Waxom is Realization of your Ideas.</h2>
-      <p class="description realizations__description">Investigationes demonstraverunt lectores legere me lius quod ii
-        legunt
-        saepius. Claritas est etiam processus dynamicus,
-        qui sequitur mutationem consuetudium.</p>
-      <img class="realizations__picture" src="" alt="Realizations preview">
+      <div class="container">
+        <div class="row">
+          <h2 class="headline realizations__headline col-lg-6 mx-auto">Waxom is Realization of your Ideas.</h2>
+          <p class="description realizations__description col-lg-8 mx-auto">Investigationes demonstraverunt lectores
+            legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
+            consuetudium.</p>
+          <img class="realizations__picture col" src="" alt="Realizations preview">
+        </div>
+      </div>
     </section>
 
     <section class="theme">
-      <h2 class="theme__headline">Waxom Multipurpose WordPress Theme</h2>
-      <p class="theme__description">Don't Forget to Rate the Template. Thanks so much!</p>
-      <button class="button theme__button" type="button">Purchase Now</button>
+      <div class="container">
+        <div class="row">
+          <div class="theme__wrapper col-lg-6">
+            <h2 class="theme__headline">Waxom Multipurpose WordPress Theme</h2>
+            <p class="theme__description">Don't Forget to Rate the Template. Thanks so much!</p>
+          </div>
+          <button class="button theme__button col-lg-2" type="button">Purchase Now</button>
+        </div>
+      </div>
     </section>
 
     <section class="latest-projects">
-      <h2 class="headline lates-projects__headline">Our Latest Projects.</h2>
-      <p class="description latest-projects__description">Investigationes demonstraverunt lectores legere me lius quod
-        ii legunt
-        saepius. Claritas est etiam processus dynamicus,
-        qui sequitur mutationem consuetudium.</p>
-      <ul class="button-list">
-        <li class="button-list__item"><button class="button" type="button">All</button></li>
-        <li class="button-list__item"><button class="button" type="button">Web Design</button></li>
-        <li class="button-list__item"><button class="button" type="button">Mobile App</button></li>
-        <li class="button-list__item"><button class="button" type="button">Illustration</button></li>
-        <li class="button-list__item"><button class="button" type="button">Photography</button></li>
-      </ul>
-      <ul class="latest-projects__list">
-        <li class="project latest-projects__item">
-          <img class="project__picture" src="" alt="">
-          <p class="project__title">Claritas Etiam Processus</p>
-          <p class="project__description">Photography, Nature</p>
-        </li>
-        <li class="project latest-projects__item">
-          <img class="project__picture" src="" alt="">
-          <p class="project__title">Quam Nutamus Farum</p>
-          <p class="project__description">Graphic Design, Mock-Up</p>
-        </li>
-        <li class="project latest-projects__item">
-          <img class="project__picture" src="" alt="">
-          <p class="project__title">Usus Legentis Videntur</p>
-          <p class="project__description">Photography, Holiday</p>
-        </li>
-        <li class="project latest-projects__item">
-          <img class="project__picture" src="" alt="">
-          <p class="project__title">Claritas Etiam Processus</p>
-          <p class="project__description">Photography, Nature</p>
-        </li>
-        <li class="project latest-projects__item">
-          <img class="project__picture" src="" alt="">
-          <p class="project__title">Quam Nutamus Farum</p>
-          <p class="project__description">Graphic Design, Mock-Up</p>
-        </li>
-        <li class="project latest-projects__item">
-          <img class="project__picture" src="" alt="">
-          <p class="project__title">Usus Legentis Videntur</p>
-          <p class="project__description">Photography, Holiday</p>
-        </li>
-      </ul>
-      <button class="button latest-projects__button" type="button">Load More</button>
+      <div class="container">
+        <div class="row">
+          <h2 class="headline lates-projects__headline col-lg-6 mx-auto">Our Latest Projects.</h2>
+          <p class="description latest-projects__description col-lg-8 mx-auto">Investigationes demonstraverunt lectores
+            legere me lius quod
+            ii legunt
+            saepius. Claritas est etiam processus dynamicus,
+            qui sequitur mutationem consuetudium.</p>
+          <ul class="button-list col-lg-8 mx-auto d-lg-flex justify-content-between">
+            <li class="button-list__item"><button class="button" type="button">All</button></li>
+            <li class="button-list__item"><button class="button" type="button">Web Design</button></li>
+            <li class="button-list__item"><button class="button" type="button">Mobile App</button></li>
+            <li class="button-list__item"><button class="button" type="button">Illustration</button></li>
+            <li class="button-list__item"><button class="button" type="button">Photography</button></li>
+          </ul>
+        </div>
+        <ul class="latest-projects__list row">
+          <li class="project latest-projects__item col-lg-4">
+            <img class="project__picture" src="" alt="">
+            <p class="project__title">Claritas Etiam Processus</p>
+            <p class="project__description">Photography, Nature</p>
+          </li>
+          <li class="project latest-projects__item col-lg-4">
+            <img class="project__picture" src="" alt="">
+            <p class="project__title">Quam Nutamus Farum</p>
+            <p class="project__description">Graphic Design, Mock-Up</p>
+          </li>
+          <li class="project latest-projects__item col-lg-4">
+            <img class="project__picture" src="" alt="">
+            <p class="project__title">Usus Legentis Videntur</p>
+            <p class="project__description">Photography, Holiday</p>
+          </li>
+          <li class="project latest-projects__item col-lg-4">
+            <img class="project__picture" src="" alt="">
+            <p class="project__title">Claritas Etiam Processus</p>
+            <p class="project__description">Photography, Nature</p>
+          </li>
+          <li class="project latest-projects__item col-lg-4">
+            <img class="project__picture" src="" alt="">
+            <p class="project__title">Quam Nutamus Farum</p>
+            <p class="project__description">Graphic Design, Mock-Up</p>
+          </li>
+          <li class="project latest-projects__item col-lg-4">
+            <img class="project__picture" src="" alt="">
+            <p class="project__title">Usus Legentis Videntur</p>
+            <p class="project__description">Photography, Holiday</p>
+          </li>
+        </ul>
+        <button class="button latest-projects__button" type="button">Load More</button>
+      </div>
     </section>
 
     <section class="presentation">
-      <h2 class="headline headline--light presentation__headline">Waxom Video Presentation</h2>
-      <p class="description description--light presentation__description">Investigationes demonstraverunt lectores
-        legere me lius quod ii legunt
-        saepius, qui sequitur mutationem consuetudium.</p>
-      <p class="presentation__time">03:26</p>
-      <video class="presentation__video" src=""></video>
-      <button class="presetation__play"><span class="visually-hidden">Play</span></button>
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <h2 class="headline headline--light presentation__headline">Waxom Video Presentation</h2>
+          <p class="description description--light presentation__description">Investigationes demonstraverunt lectores
+            legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+          <p class="presentation__time">03:26</p>
+          <video class="presentation__video" src=""></video>
+          <button class="presetation__play"><span class="visually-hidden">Play</span></button>
+        </div>
+      </div>
     </section>
 
     <section class="excellent">
-      <h2 class="headline excellent__headline">Excellent for Mobile Devices.</h2>
-      <p class="description excellent__description">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-        suscipit
-        lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod
-        ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-      </p>
-      <ul class="excellent__list">
-        <li class="excellent__item">Nam liber tempor cum soluta nobis eleifend option;</li>
-        <li class="excellent__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-        <li class="excellent__item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-        <li class="excellent__item">Investigationes demonstraverunt lectores</li>
-      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 order-lg-2">
+            <h2 class="headline excellent__headline">Excellent for Mobile Devices.</h2>
+            <p class="description excellent__description">Qisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorper
+              suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere
+              me lius quod
+              ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
+              futurum.
+            </p>
+            <ul class="excellent__list">
+              <li class="excellent__item">Nam liber tempor cum soluta nobis eleifend option;</li>
+              <li class="excellent__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+              <li class="excellent__item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+              <li class="excellent__item">Investigationes demonstraverunt lectores</li>
+            </ul>
+          </div>
+          <img class="excellent__picture col-lg-4 order-lg-1" src="" alt="mobile preview">
+        </div>
+      </div>
     </section>
 
     <section class="counters">
-      <h2 class="visually-hidden">Counters</h2>
-      <ul class="counters__list">
-        <li class="counters__item">
-          <img class="counters__icon" src="" alt="">
-          <p class="counters__number">3587</p>
-          <p class="counters__title">Satisfied Clients</p>
-        </li>
-        <li class="counters__item">
-          <img class="counters__icon" src="" alt="">
-          <p class="counters__number">207</p>
-          <p class="counters__title">Cups of coffee</p>
-        </li>
-        <li class="counters__item">
-          <img class="counters__icon" src="" alt="">
-          <p class="counters__number">2500</p>
-          <p class="counters__title">Blog posts</p>
-        </li>
-        <li class="counters__item">
-          <img class="counters__icon" src="" alt="">
-          <p class="counters__number">873</p>
-          <p class="counters__title">Likes</p>
-        </li>
-        <li class="counters__item">
-          <img class="counters__icon" src="" alt="">
-          <p class="counters__number">900</p>
-          <p class="counters__title">We launched</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Counters</h2>
+        <ul class="counters__list row justify-content-center">
+          <li class="counters__item col-lg-2">
+            <img class="counters__icon" src="" alt="">
+            <p class="counters__number">3587</p>
+            <p class="counters__title">Satisfied Clients</p>
+          </li>
+          <li class="counters__item col-lg-2">
+            <img class="counters__icon" src="" alt="">
+            <p class="counters__number">207</p>
+            <p class="counters__title">Cups of coffee</p>
+          </li>
+          <li class="counters__item col-lg-2">
+            <img class="counters__icon" src="" alt="">
+            <p class="counters__number">2500</p>
+            <p class="counters__title">Blog posts</p>
+          </li>
+          <li class="counters__item col-lg-2">
+            <img class="counters__icon" src="" alt="">
+            <p class="counters__number">873</p>
+            <p class="counters__title">Likes</p>
+          </li>
+          <li class="counters__item col-lg-2">
+            <img class="counters__icon" src="" alt="">
+            <p class="counters__number">900</p>
+            <p class="counters__title">We launched</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="recent-posts">
-      <h2 class="headline recent-posts__headline">Recent Posts.</h2>
-      <p class="description recent-posts__description">Investigationes demonstraverunt lectores legere me lius quod ii
-        legunt
-        saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-      <ul class="recent-posts__list">
-        <li class="post recent-posts__item">
-          <time class="post__date" datetime="2015-09-30">
-            <span class="post__day">30</span><span class="post__month">sep</span>
-          </time>
-          <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
-          <img class="post__picture" src="" alt="">
-          <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <a href="" class="post__link">Read More</a>
-        </li>
-        <li class="post recent-posts__item">
-          <time class="post__date" datetime="2015-09-30">
-            <span class="post__day">30</span><span class="post__month">sep</span>
-          </time>
-          <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
-          <img class="post__picture" src="" alt="">
-          <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <a href="" class="post__link">Read More</a>
-        </li>
-        <li class="post recent-posts__item">
-          <time class="post__date" datetime="2015-09-30">
-            <span class="post__day">30</span><span class="post__month">sep</span>
-          </time>
-          <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
-          <img class="post__picture" src="" alt="">
-          <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <a href="" class="post__link">Read More</a>
-        </li>
-        <li class="post recent-posts__item">
-          <time class="post__date" datetime="2015-09-30">
-            <span class="post__day">30</span><span class="post__month">sep</span>
-          </time>
-          <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
-          <img class="post__picture" src="" alt="">
-          <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <a href="" class="post__link">Read More</a>
-        </li>
-        <li class="post recent-posts__item">
-          <time class="post__date" datetime="2015-09-30">
-            <span class="post__day">30</span><span class="post__month">sep</span>
-          </time>
-          <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
-          <img class="post__picture" src="" alt="">
-          <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <a href="" class="post__link">Read More</a>
-        </li>
-        <li class="post recent-posts__item">
-          <time class="post__date" datetime="2015-09-30">
-            <span class="post__day">30</span><span class="post__month">sep</span>
-          </time>
-          <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
-          <img class="post__picture" src="" alt="">
-          <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-          <a href="" class="post__link">Read More</a>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="row">
+          <h2 class="headline recent-posts__headline col-lg-6 mx-auto">Recent Posts.</h2>
+          <p class="description recent-posts__description col-lg-8 mx-auto">Investigationes demonstraverunt lectores
+            legere me lius quod ii
+            legunt
+            saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        </div>
+        <ul class="recent-posts__list">
+          <li class="post recent-posts__item">
+            <time class="post__date" datetime="2015-09-30">
+              <span class="post__day">30</span><span class="post__month">sep</span>
+            </time>
+            <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+            <img class="post__picture" src="" alt="">
+            <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            </p>
+            <a href="" class="post__link">Read More</a>
+          </li>
+          <li class="post recent-posts__item">
+            <time class="post__date" datetime="2015-09-30">
+              <span class="post__day">30</span><span class="post__month">sep</span>
+            </time>
+            <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+            <img class="post__picture" src="" alt="">
+            <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            </p>
+            <a href="" class="post__link">Read More</a>
+          </li>
+          <li class="post recent-posts__item">
+            <time class="post__date" datetime="2015-09-30">
+              <span class="post__day">30</span><span class="post__month">sep</span>
+            </time>
+            <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+            <img class="post__picture" src="" alt="">
+            <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            </p>
+            <a href="" class="post__link">Read More</a>
+          </li>
+          <li class="post recent-posts__item">
+            <time class="post__date" datetime="2015-09-30">
+              <span class="post__day">30</span><span class="post__month">sep</span>
+            </time>
+            <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+            <img class="post__picture" src="" alt="">
+            <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            </p>
+            <a href="" class="post__link">Read More</a>
+          </li>
+          <li class="post recent-posts__item">
+            <time class="post__date" datetime="2015-09-30">
+              <span class="post__day">30</span><span class="post__month">sep</span>
+            </time>
+            <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+            <img class="post__picture" src="" alt="">
+            <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            </p>
+            <a href="" class="post__link">Read More</a>
+          </li>
+          <li class="post recent-posts__item">
+            <time class="post__date" datetime="2015-09-30">
+              <span class="post__day">30</span><span class="post__month">sep</span>
+            </time>
+            <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+            <img class="post__picture" src="" alt="">
+            <p class="post__description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            </p>
+            <a href="" class="post__link">Read More</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="partners">
-      <h2 class="visually-hidden">Partners</h2>
-      <ul class="partners__list">
-        <li class="partners__item"><img class="parnters__logo" src="" alt=""></li>
-        <li class="partners__item"><img class="parnters__logo" src="" alt=""></li>
-        <li class="partners__item"><img class="parnters__logo" src="" alt=""></li>
-        <li class="partners__item"><img class="parnters__logo" src="" alt=""></li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Partners</h2>
+        <ul class="partners__list row">
+          <li class="partners__item col-lg-3"><img class="parnters__logo" src="" alt=""></li>
+          <li class="partners__item col-lg-3"><img class="parnters__logo" src="" alt=""></li>
+          <li class="partners__item col-lg-3"><img class="parnters__logo" src="" alt=""></li>
+          <li class="partners__item col-lg-3"><img class="parnters__logo" src="" alt=""></li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <h2 class="visually-hidden"></h2>
-    <div class="page-footer__wrapper">
+    <div class="page-footer__social">
 
-      <section class="footer-about page-footer__footer-about">
-        <h3 class="visually-hidden">Waxon</h3>
-        <div class="logo page-footer__logo">
-          <a class="logo__link" href="#">
-            <img class="logo__img" src="" width="" height="" alt="Waxom">
-            Waxom
-          </a>
+      <div class="container">
+        <div class="row">
+          <section class="footer-about page-footer__footer-about col-lg-3">
+            <h3 class="visually-hidden">Waxon</h3>
+            <div class="logo page-footer__logo">
+              <a class="logo__link" href="#">
+                <img class="logo__img" src="" width="" height="" alt="Waxom">
+                Waxom
+              </a>
+            </div>
+            <img src="" alt="" class="footer-about__logo">
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet
+              dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis
+              claritatem.
+            </p>
+            <a class="footer-about__link" href="#"></a>
+          </section>
+
+          <section class="footer-posts page-footer__footer-posts col-lg-3">
+            <h3 class="footer-headline footer-posts__headline">Recent Posts</h3>
+            <ul class="footer-posts__list">
+              <li class="footer-posts__item">
+                <time class="footer-posts__date" datetime="2015-09-08">September 08, 2015</time>
+                <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+              </li>
+              <li class="footer-posts__item">
+                <time class="footer-posts__date footer-posts__date--hover" datetime="2015-09-08">September 08,
+                  2015</time>
+                <p class="footer__text footer__text--hover">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                </p>
+              </li>
+              <li class="footer-posts__item">
+                <time class="footer-posts__date" datetime="2015-09-08">September 08, 2015</time>
+                <p class="footer__text">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula
+                  quarta
+                  decima</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer-twitter page-footer__footer-twitter col-lg-3">
+            <h3 class="footer-headline footer-twitter__headline">Our Twitter</h3>
+            <ul class="footer-twitter__list">
+              <li class="footer-twitter__item">
+                <p class="footer-twitter__text"><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil
+                  imperdiet doming</p>
+                <time datetime="2015-09-08">3 mins ago</time>
+              </li>
+              <li class="footer-twitter__item">
+                <p class="footer__text">Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus
+                  parum anteposuerit
+                  litterarum</p>
+                <time datetime="2015-09-08">5 hours ago</time>
+              </li>
+              <li class="footer-twitter__item">
+                <p class="footer__text">Soluta nobis option <a href="#">bit.ly/1Hniso7</a></p>
+                <time datetime="2015-09-08">20 days ago</time>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer-dribble col-lg-3">
+            <h3 class="footer-headline page-footer__dribbble">Dribbble Widget</h3>
+            <ul class="footer-dribbble__list">
+              <li class="footer-dribbble__item"><img src="" alt=""></li>
+              <li class="footer-dribbble__item"><img src="" alt=""></li>
+              <li class="footer-dribbble__item"><img src="" alt=""></li>
+              <li class="footer-dribbble__item"><img src="" alt=""></li>
+            </ul>
+          </section>
         </div>
-        <img src="" alt="" class="footer-about__logo">
-        <p class="footer__text">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis
-          claritatem.
-        </p>
-        <a class="footer-about__link" href="#"></a>
-      </section>
-
-      <section class="footer-posts page-footer__footer-posts">
-        <h3 class="footer-headline footer-posts__headline">Recent Posts</h3>
-        <ul class="footer-posts__list">
-          <li class="footer-posts__item">
-            <time class="footer-posts__date" datetime="2015-09-08">September 08, 2015</time>
-            <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-          </li>
-          <li class="footer-posts__item">
-            <time class="footer-posts__date footer-posts__date--hover" datetime="2015-09-08">September 08, 2015</time>
-            <p class="footer__text footer__text--hover">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-          </li>
-          <li class="footer-posts__item">
-            <time class="footer-posts__date" datetime="2015-09-08">September 08, 2015</time>
-            <p class="footer__text">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta
-              decima</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="footer-twitter page-footer__footer-twitter">
-        <h3 class="footer-headline footer-twitter__headline">Our Twitter</h3>
-        <ul class="footer-twitter__list">
-          <li class="footer-twitter__item">
-            <p class="footer-twitter__text"><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil
-              imperdiet doming</p>
-            <time datetime="2015-09-08">3 mins ago</time>
-          </li>
-          <li class="footer-twitter__item">
-            <p class="footer__text">Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus
-              parum anteposuerit
-              litterarum</p>
-            <time datetime="2015-09-08">5 hours ago</time>
-          </li>
-          <li class="footer-twitter__item">
-            <p class="footer__text">Soluta nobis option <a href="#">bit.ly/1Hniso7</a></p>
-            <time datetime="2015-09-08">20 days ago</time>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h3 class="footer-dribbble page-footer__dribbble">Dribbble Widget</h3>
-        <ul class="footer-dribbble__list">
-          <li class="footer-dribbble__item"><img src="" alt=""></li>
-          <li class="footer-dribbble__item"><img src="" alt=""></li>
-          <li class="footer-dribbble__item"><img src="" alt=""></li>
-          <li class="footer-dribbble__item"><img src="" alt=""></li>
-        </ul>
-      </section>
+      </div>
     </div>
 
     <section class="footer-copyright page-footer__copyright">
-      <ul class="footer-copyright__list">
-        <li class="footer-copyright__item">Copyright &copy; 2015 <span class="footer-copyright__name">Waxom</span></li>
-        <li class="footer-copyright__item">Privacy Policy</li>
-        <li class="footer-copyright__item footer-copyright__item--hover">FAQ</li>
-        <li class="footer-copyright__item">Support</li>
-      </ul>
-      <ul class="footer-copyright__list">
-        <li class="footer-copyright__item">Designed by <span class="footer-copyright__name">ThemeFire</span></li>
-        <li class="footer-copyright__item">Only on <span class="footer-copyright__name">Envato Market</span></li>
-      </ul>
+      <div class="container">
+        <div class="row justify-content-between">
+          <ul class="footer-copyright__list col-lg-5">
+            <li class="footer-copyright__item">Copyright &copy; 2015 <span class="footer-copyright__name">Waxom</span>
+            </li>
+            <li class="footer-copyright__item">Privacy Policy</li>
+            <li class="footer-copyright__item footer-copyright__item--hover">FAQ</li>
+            <li class="footer-copyright__item">Support</li>
+          </ul>
+          <ul class="footer-copyright__list col-lg-4">
+            <li class="footer-copyright__item">Designed by <span class="footer-copyright__name">ThemeFire</span></li>
+            <li class="footer-copyright__item">Only on <span class="footer-copyright__name">Envato Market</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </footer>
 
@@ -407,7 +465,7 @@
   <script src="lib/jquery/jquery-3.3.1.min.js"></script>
   <script src="lib/popper/popper-1.14.7.min.js"></script>
   <script src="lib/bootstrap/bootstrap-4.3.1.min.js"></script>
-  
+
 </body>
 
 </html>
