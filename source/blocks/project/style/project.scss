@@ -1,0 +1,41 @@
+.project {
+  border: none;
+  box-shadow: none;
+}
+
+.project__picture {
+  height: auto;
+}
+
+.project__content {
+  position: relative;
+
+  background-color: #fbfaf8;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 19px;
+
+    width: 30px;
+    height: 20px;
+    
+    border: 15px solid transparent;
+    border-bottom: 10px solid #fbfaf8;
+  }
+}
+
+.project__title {
+  font-family: Raleway;
+  color: #c7b299;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.project__description {
+  color: #d1d1d1;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
