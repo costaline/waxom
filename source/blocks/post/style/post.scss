@@ -1,0 +1,83 @@
+.post {
+  position: relative;
+
+  border: 1px solid #f8f8f8;
+  border-radius: 0;
+}
+
+.post__picture {
+  height: auto;
+}
+
+.post__date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.post__day {
+  display: block;
+  width: 50px;
+  height: 35px;
+
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  
+  border-radius: 3px 3px 0 0;
+  background-color: #363636;
+}
+
+.post__month {
+  display: block;
+  width: 50px;
+  height: 25px;
+
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+
+  border-radius: 0 0 3px 3px;
+  background-color: #252525;
+}
+
+.post__title {
+  font-family: "Raleway";
+  color: #555555;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.post__description {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.post__link {
+  position: relative;
+  padding-right: 19px;
+
+  color: #c7b299;
+  font-size: 14px;
+  font-weight: 300;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    display: block;
+    width: 10px;
+    height: 8px;
+
+    border: 4px solid transparent;
+    border-left: 5px solid #8c8c8c;
+  }
+}
