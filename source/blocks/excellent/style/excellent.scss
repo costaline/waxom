@@ -1,0 +1,35 @@
+.excellent {
+  margin-top: -3%;
+  padding-top: 79px;
+
+  background-color: #fbfaf8;
+}
+
+.excellent__headline {
+  margin-bottom: 35px;
+}
+
+.excellent__description {
+  margin-bottom: 40px;
+}
+
+.excellent__list {
+  padding-left: 35px;
+}
+
+.excellent__item {
+  padding-left: 50px;
+  margin-bottom: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    display: block;
+    background-image: url("../img/excellent-list-disk.png");
+    background-position: center;
+  }
+}
