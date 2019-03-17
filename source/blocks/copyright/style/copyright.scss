@@ -1,0 +1,29 @@
+.copyright {
+  padding-top: 45px;
+  padding-bottom: 42px;
+
+  background-color: #111111;
+}
+
+.copyright__item {
+  padding-left: 13px;
+  padding-right: 15px;
+  border-right: 1px solid #252525;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 13px;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.copyright__name {
+  color: #959595;
+}
