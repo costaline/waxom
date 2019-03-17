@@ -1,0 +1,45 @@
+.counters {
+  height: 300px;
+  padding-top: 69px;
+
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.counters__item {
+  position: relative;
+  padding-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 15px);
+
+    display: block;
+    width: 30px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+}
+
+.counters__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.counters__number {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.counters__title {
+  color: #c7b299;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
