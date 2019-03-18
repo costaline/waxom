@@ -6,7 +6,7 @@
 .services__item {
   position: relative;
 
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   &::after {
     content: "";
@@ -20,6 +20,20 @@
 
     background-color: #f1eee9;
   }
+
+  &:hover {
+    .services__img {
+      fill: #c7b299;
+    }
+
+    .services__title {
+      color: #c7b299;
+    }
+
+    &::after {
+      background-color: #c7b299;
+    }
+  }
 }
 
 .services__img {
@@ -28,10 +42,12 @@
   margin: 0 auto 20px;
   display: flex;
   align-items: center;
+
+  fill: #555555;
 }
 
 .services__title {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   font-family: "Raleway";
   color: #555555;
@@ -42,7 +58,7 @@
 
 .services__description {
   color: #8c8c8c;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
