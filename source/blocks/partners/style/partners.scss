@@ -7,4 +7,13 @@
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
+
+  & .container {
+    max-width: 1170px;
+  }
+}
+
+.partners__logo {
+  display: block;
+  margin: 0 auto;
 }
