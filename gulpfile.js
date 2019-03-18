@@ -10,6 +10,9 @@ var autoprefixer = require("gulp-autoprefixer");
 var cleanCSS = require("gulp-clean-css");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
+
+var cheerio = require('gulp-cheerio');
+
 var rename = require("gulp-rename");
 var browserSync = require("browser-sync").create();
 var del = require("del");
@@ -81,6 +84,14 @@ function images() {
 
 function sprite() {
   return gulp.src("source/blocks/**/img/*-icon.svg")
+    
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
