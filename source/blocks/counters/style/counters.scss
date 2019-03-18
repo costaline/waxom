@@ -3,6 +3,10 @@
   padding-top: 69px;
 
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+
+  & .container {
+    max-width: 1170px;
+  }
 }
 
 .counters__item {
@@ -26,10 +30,12 @@
 .counters__icon {
   display: block;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .counters__number {
+  margin-bottom: -5px;
+
   color: #ffffff;
   font-size: 48px;
   font-weight: 300;
