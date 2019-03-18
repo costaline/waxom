@@ -1,13 +1,16 @@
 .theme {
   min-height: 150px;
-  padding-top: 45px;
+  padding-top: 44px;
+  padding-bottom: 10px;
 
   background-color: #f4f5f8;
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 }
 
 .theme__headline {
-  font-family: Raleway;
+  margin-bottom: 0px;
+
+  font-family: "Raleway";
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
@@ -21,4 +24,9 @@
   color: #615855;
   font-size: 18px;
   font-weight: 300;
+}
+
+.theme__button {
+  margin-top: 5px;
+  margin-left: 10px;
 }
