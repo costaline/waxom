@@ -1,20 +1,25 @@
 .excellent {
   margin-top: -3%;
-  padding-top: 79px;
+  padding-top: 110px;
 
   background-color: #fbfaf8;
+
+  & .container {
+    max-width: 1170px;
+  }
 }
 
 .excellent__headline {
-  margin-bottom: 35px;
+  margin-top: 112px;
+  margin-bottom: 27px;
 }
 
 .excellent__description {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .excellent__list {
-  padding-left: 35px;
+  padding-left: 47px;
 }
 
 .excellent__item {
