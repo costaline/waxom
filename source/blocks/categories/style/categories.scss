@@ -9,4 +9,10 @@
   background-color: transparent;
   border-radius: 3px;
   border: 1px solid #ebebeb;
+
+  &:hover {
+    color: #ffffff;
+    
+    background-color: #998675;
+  }
 }
