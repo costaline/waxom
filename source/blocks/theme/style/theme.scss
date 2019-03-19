@@ -28,4 +28,28 @@
 
 .theme__button {
   margin-top: 5px;
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .theme__headline {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .theme {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .theme__headline,
+  .theme__description {
+    text-align: center;
+  }
+
+  .theme__button {
+    margin-right: auto;
+  }
 }
