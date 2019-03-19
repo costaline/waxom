@@ -63,3 +63,10 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media (max-width: 992px) {
+  .services {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
