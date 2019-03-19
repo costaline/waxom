@@ -41,11 +41,16 @@
 }
 
 .page-footer__about {
-
+  
   & .page-footer__text {
     margin-bottom: 20px;
 
     line-height: 24px;
+  }
+
+  & .read-more:hover {
+    text-decoration: none;
+    color: #ffffff;
   }
 }
 
