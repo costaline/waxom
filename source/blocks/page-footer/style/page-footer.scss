@@ -26,6 +26,16 @@
   &:last-of-type {
     border-bottom: none;
   }
+
+  &:hover {
+    & .page-footer__date {
+      color: #ffffff;
+    }
+    
+    & .page-footer__text {
+      color: #c7b299;
+    }
+  }
 }
 
 .page-footer__text {
@@ -78,7 +88,7 @@
   }
 
   &:hover {
-    color: #ffffff;
+    color: #c7b299;
     text-decoration: none;
   }
 }
