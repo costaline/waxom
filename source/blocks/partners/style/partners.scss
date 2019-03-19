@@ -13,3 +13,30 @@
   display: block;
   margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+  .partners {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .partners__logo {
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding-top: 40px;
+    padding-bottom: 0%;
+  }
+
+  .partners__logo {
+    width: 60%;
+  }
+
+  .partners__item {
+    margin-bottom: 40px;
+  }
+}
