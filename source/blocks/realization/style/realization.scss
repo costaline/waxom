@@ -1,5 +1,4 @@
 .realization {
-  min-height: 700px;
   padding-top: 78px;
   
   background-color: #fbfaf8;
@@ -20,4 +19,10 @@
 .realization__picture {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .realization {
+    padding-top: 40px;
+  }
 }
