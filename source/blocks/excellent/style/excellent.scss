@@ -34,3 +34,38 @@
     background-position: center;
   }
 }
+
+.excellent__picture {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .excellent {
+    padding-top: 20px;
+  }
+
+  .excellent__headline {
+    margin-top: 30px;
+    margin-bottom: 27px;
+  }
+
+  .excellent__list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .excellent__picture {
+    display: none;
+  }
+
+  .excellent__headline,
+  .excellent__description {
+    text-align: center;
+  }
+
+  .excellent__list {
+    padding-left: 0px;
+  }
+}
