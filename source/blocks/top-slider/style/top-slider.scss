@@ -113,3 +113,23 @@
   }
 }
 
+@media (max-width: 992px) {
+  .top-slider__control {
+    display: none;
+  }
+
+  .top-slider__item {
+    height: 93vh;
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-slider__title {
+    font-size: 42px;
+  }
+
+  .top-slider__intro {
+    font-size: 26px;
+  }
+}
