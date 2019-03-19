@@ -8,11 +8,13 @@
 .copyright__item {
   padding-left: 13px;
   padding-right: 15px;
-  border-right: 1px solid #252525;
+
   color: #555555;
   font-size: 13px;
   font-weight: 300;
   line-height: 13px;
+
+  border-right: 1px solid #252525;
 
   &:first-of-type {
     padding-left: 0;
@@ -26,4 +28,30 @@
 
 .copyright__name {
   color: #959595;
+}
+
+@media (max-width: 992px) {
+  .copyright {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    background-color: #111111;
+  }
+
+  .copyright__list {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .copyright__item {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    text-align: center;
+
+    border-right: none;
+  }
 }
