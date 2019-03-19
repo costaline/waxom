@@ -76,6 +76,12 @@ body {
   color: #8c8c8c;
 }
 
+.container {
+  max-width: 1230px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
