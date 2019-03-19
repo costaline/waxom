@@ -11,3 +11,9 @@
   margin-top: -5px;
   margin-right: -5px;
 }
+
+@media (max-width: 1200px) {
+  .main-nav__site {
+    margin-right: 10px;
+  }
+}

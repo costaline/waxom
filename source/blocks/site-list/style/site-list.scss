@@ -1,13 +1,29 @@
 .site-list__link {
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 14px;
   font-weight: 300;
 
   &:hover {
-    color: #c7b299;
+    color: #c7b299 !important;
   }
 }
 
 .site-list__item {
   margin-left: 13px;
+}
+
+@media (max-width: 1200px) {
+  .site-list__item {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-list__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .site-list__link {
+    font-size: 20px;
+  }
 }
