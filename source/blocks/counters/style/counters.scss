@@ -1,5 +1,5 @@
 .counters {
-  height: 300px;
+  min-height: 300px;
   padding-top: 69px;
 
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
@@ -44,4 +44,40 @@
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .counters__number {
+    font-size: 40px;
+  }
+
+  .counters__title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .counters {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .counters__list {
+    justify-content: center;
+  }
+
+  .counters__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .counters__number {
+    font-size: 30px;
+  }
+
+  .counters__title {
+    font-size: 10px;
+  }
 }
