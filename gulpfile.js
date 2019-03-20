@@ -1,18 +1,15 @@
 // plugins
 
 var gulp = require("gulp");
-// var less = require("gulp-less");
+var less = require("gulp-less");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("gulp-autoprefixer");
-var cleanCSS = require("gulp-clean-css");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
-
 var cheerio = require('gulp-cheerio');
-
 var rename = require("gulp-rename");
 var browserSync = require("browser-sync").create();
 var del = require("del");
@@ -20,8 +17,12 @@ var sourcemaps = require("gulp-sourcemaps");
 var uglify = require("gulp-uglify");
 var flatten = require("gulp-flatten");
 var filter = require("gulp-filter");
-var gcmq = require("gulp-group-css-media-queries");
 var imageminMozjpeg = require('imagemin-mozjpeg');
+var csso = require('gulp-csso');
+var gulpif = require('gulp-if');
+var argv = require('yargs').argv;
+var gcmq = require('gulp-group-css-media-queries');
+var debug = require('gulp-debug');
 
 // functions--dev
 function clean() {
@@ -40,16 +41,16 @@ function style() {
   return gulp.src("source/style/style.*")
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    // .pipe(less())
-    .pipe(sass())
-    .pipe(autoprefixer({ browsers: [">0.1%"], cascade: false }))
-    .pipe(gcmq())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest("build/css"))
-    .pipe(filter('**/style.css'))
-    .pipe(cleanCSS({ level: 2 }))
+    .pipe(debug({ title: 'scss or less' }))
+    .pipe(gulpif('**/*.scss', sass(), less()))
+    .pipe(gulpif(argv.group, gcmq()))
+    .pipe(autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
+    .pipe(gulpif(!argv.prod, sourcemaps.write('.')))
+    .pipe(gulpif(!argv.prod, gulp.dest("build/css")))
+    .pipe(gulpif(!argv.prod, filter('**/*.css')))
+    .pipe(csso())
     .pipe(rename({suffix: '.min'}))
-    .pipe(sourcemaps.write('.'))
+    .pipe(gulpif(!argv.prod, sourcemaps.write('.')))
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
 }
@@ -76,7 +77,7 @@ function images() {
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
-      imageminMozjpeg({ quality: 75 }),
+      imageminMozjpeg({ quality: 85 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -84,14 +85,12 @@ function images() {
 
 function sprite() {
   return gulp.src("source/blocks/**/img/*-icon.svg")
-    
     .pipe(cheerio({
       run: function ($) {
         $('[fill]').removeAttr('fill');
       },
       parserOptions: { xmlMode: true }
     }))
-    
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
@@ -108,8 +107,7 @@ function watch() {
         port: 3000
     });
 
-    // gulp.watch(["source/style/**/*.less", "source/blocks/**/*.less"], style);
-    gulp.watch(["source/style/**/*.scss", "source/blocks/**/*.scss"], style);
+    gulp.watch("source/**/style/**/*.??ss", style);
     gulp.watch("source/js/*.js", script);
     gulp.watch("source/*.html", gulp.series(html, browserSyncReload));
 }
@@ -129,7 +127,6 @@ function copyghub() {
 
 // complex tasks
 
-// var build = gulp.series(clean, copy, gulp.parallel(style, html, script, images));
 var build = gulp.series(clean, copy, sprite, gulp.parallel(style, html, script, images));
 var dev = gulp.series(build, watch);
 var publish = gulp.series(build, cleanghub, copyghub);
