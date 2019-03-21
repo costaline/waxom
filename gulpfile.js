@@ -116,13 +116,13 @@ function watch() {
 
 function cleanghub() {
   return del([
-    "/home/constantine/Документы/GitHub/costaline.github.io/projects/waxom/*"
+    "../costaline.github.io/projects/waxom"
   ], { force: true });
 }
 
 function copyghub() {
   return gulp.src("build/**")
-    .pipe(gulp.dest("/home/constantine/Документы/GitHub/costaline.github.io/projects/waxom"));
+    .pipe(gulp.dest("../costaline.github.io/projects/waxom"));
 }
 
 // complex tasks
